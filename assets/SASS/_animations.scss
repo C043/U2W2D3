@@ -5,7 +5,7 @@
   animation-fill-mode: both;
   transition: all;
 
-  @keyframes fade-in {
+  @keyframes #{$name} {
     0% {
       opacity: 0;
       translate: 0 $start-point;

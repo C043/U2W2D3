@@ -13,3 +13,10 @@ $header-font-style: normal;
   font-weight: $fw;
   font-style: $fs;
 }
+
+@mixin basic-text($fm: "roboto", $fw: 400, $fs: normal) {
+  font-family: $fm;
+  font-weight: $fw;
+  font-style: $fs;
+  font-size: 1em;
+}

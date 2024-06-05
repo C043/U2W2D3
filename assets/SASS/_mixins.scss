@@ -4,9 +4,13 @@
   border: $border;
 }
 
-@mixin grid($gap: 1em) {
-  justify-content: space-around;
-  column-gap: $gap;
+@mixin grid($n) {
+  display: flex;
+  align-items: center;
   row-gap: 1em;
   flex-wrap: wrap;
+  & > div {
+    padding: 1em;
+    width: calc(100% / $n);
+  }
 }
