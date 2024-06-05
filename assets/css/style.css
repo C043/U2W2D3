@@ -386,7 +386,22 @@ body header #hero {
   background-color: #640fe5;
 }
 body header #hero #hero-text {
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  transition: all;
   width: 50vw;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    translate: 0 -50%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0px;
+  }
 }
 body header #hero #hero-text h1 {
   font-family: "Rubik Mono One";
@@ -402,15 +417,42 @@ body header #hero #hero-text button {
   cursor: pointer;
 }
 body header #hero #hero-img img {
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  transition: all;
+  border-radius: 5px;
+  box-shadow: 0px 5px 22px 1px rgba(0, 0, 0, 0.39);
+  border: 1px solid black;
   width: 500px;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    translate: 0 -50%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0px;
+  }
+}
 body main section {
   justify-content: space-around;
+  -moz-column-gap: 5em;
+       column-gap: 5em;
+  row-gap: 1em;
   flex-wrap: wrap;
 }
-body main section div img {
+body main section div {
   width: 200px;
+}
+body main section div img {
+  border-radius: 5px;
+  box-shadow: 0px 5px 22px 1px rgba(0, 0, 0, 0.72);
+  border: none;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,12 @@
+@mixin floating($bor-rad: 5px, $shadow: 0px 5px 22px 1px rgba(0, 0, 0, 0.39), $border: 1px solid black) {
+  border-radius: $bor-rad;
+  box-shadow: $shadow;
+  border: $border;
+}
+
+@mixin grid($gap: 1em) {
+  justify-content: space-around;
+  column-gap: $gap;
+  row-gap: 1em;
+  flex-wrap: wrap;
+}
