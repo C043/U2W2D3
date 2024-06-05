@@ -386,12 +386,18 @@ body header #hero {
   background-color: #640fe5;
 }
 body header #hero #hero-text {
+  width: 50vw;
+}
+body header #hero #hero-text h1 {
   animation-name: fade-in;
   animation-duration: 2s;
   animation-delay: 1s;
   animation-fill-mode: both;
   transition: all;
-  width: 50vw;
+  font-family: "Rubik Mono One";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
 }
 @keyframes fade-in {
   0% {
@@ -403,23 +409,49 @@ body header #hero #hero-text {
     translate: 0 0px;
   }
 }
-body header #hero #hero-text h1 {
-  font-family: "Rubik Mono One";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.5em;
-}
 body header #hero #hero-text p {
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  transition: all;
   width: 300px;
 }
-body header #hero #hero-text button {
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    translate: 0 -50%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0px;
+  }
+}
+body header #hero #hero-text #hero-buttons {
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+  transition: all;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    translate: 0 -50%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0px;
+  }
+}
+body header #hero #hero-text #hero-buttons button {
   padding: 0.5em;
   cursor: pointer;
 }
 body header #hero #hero-img img {
   animation-name: fade-in;
   animation-duration: 2s;
-  animation-delay: 2s;
+  animation-delay: 4s;
   animation-fill-mode: both;
   transition: all;
   border-radius: 5px;

@@ -33,24 +33,28 @@ body {
       gap: 1em;
       background-color: $bg-color;
       #hero-text {
-        @include fade-in(2s, -50%, 0px, 1s, fade-in);
-
         width: 50vw;
         h1 {
+          @include fade-in(2s, -50%, 0px, 1s, fade-in);
           @include title-big();
           font-size: 1.5em;
         }
         p {
+          @include fade-in(2s, -50%, 0px, 2s, fade-in);
+
           width: 300px;
         }
-        button {
-          padding: 0.5em;
-          cursor: pointer;
+        #hero-buttons {
+          @include fade-in(2s, -50%, 0px, 3s, fade-in);
+          button {
+            padding: 0.5em;
+            cursor: pointer;
+          }
         }
       }
       #hero-img {
         img {
-          @include fade-in(2s, -50%, 0px, 2s, fade-in);
+          @include fade-in(2s, -50%, 0px, 4s, fade-in);
           @include floating();
           width: 500px;
           height: 300px;
