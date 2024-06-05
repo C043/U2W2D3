@@ -1,1 +1,27 @@
-@import "_sass-reset.scss";
+@import "reset";
+@import "colors";
+@import "font";
+@import "spacings";
+@import "utilities";
+
+body {
+  header {
+    nav {
+      justify-content: space-between;
+      background-color: $primary;
+      align-items: center;
+      .logo {
+        width: 100px;
+        svg {
+          fill: red;
+        }
+      }
+      #links {
+        gap: 1em;
+        a {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
