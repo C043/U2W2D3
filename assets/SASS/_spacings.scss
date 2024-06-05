@@ -3,11 +3,27 @@ $sizes: 1em, 2em, 3em, 4em, 5em, 6em;
 $sizes-name: "sm", "normal", "md", "lg", "xl", "xxl";
 
 @for $i from 1 through length($sizes) {
+  .padding-#{list.nth($sizes-name, $i)} {
+    padding: list.nth($sizes, $i);
+  }
+
   .padding-block-#{list.nth($sizes-name, $i)} {
     padding-block: list.nth($sizes, $i);
   }
   .padding-inline-#{list.nth($sizes-name, $i)} {
     padding-inline: list.nth($sizes, $i);
+  }
+
+  .margin-#{list.nth($sizes-name, $i)} {
+    margin: list.nth($sizes, $i);
+  }
+
+  .mb-#{list.nth($sizes-name, $i)} {
+    margin-bottom: list.nth($sizes, $i);
+  }
+
+  .mt-#{list.nth($sizes-name, $i)} {
+    margin-top: list.nth($sizes, $i);
   }
 
   .margin-block-#{list.nth($sizes-name, $i)} {

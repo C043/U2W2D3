@@ -3,8 +3,10 @@
 @import "font";
 @import "spacings";
 @import "utilities";
+@import "buttons";
 
 body {
+  color: $text-color;
   header {
     nav {
       justify-content: space-between;
@@ -20,6 +22,44 @@ body {
         gap: 1em;
         a {
           cursor: pointer;
+        }
+      }
+    }
+    #hero {
+      justify-content: space-between;
+      align-items: center;
+      gap: 1em;
+      background-color: $bg-color;
+      #hero-text {
+        width: 50vw;
+        h1 {
+          @include title-big();
+          font-size: 1.5em;
+        }
+        p {
+          width: 300px;
+        }
+        button {
+          padding: 0.5em;
+          cursor: pointer;
+        }
+      }
+      #hero-img {
+        img {
+          width: 500px;
+          height: 300px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  main {
+    section {
+      justify-content: space-around;
+      flex-wrap: wrap;
+      div {
+        img {
+          width: 200px;
         }
       }
     }
